@@ -1,0 +1,13 @@
+.vs/
+[Dd]ebug/
+[Dd]ebugx64/
+[Rr]elease/
+[Rr]eleasex64/
+x64/
+x86/
+[Oo]bj/
+[Ll]og/
+
+*.o
+*.~*
+*.*~
