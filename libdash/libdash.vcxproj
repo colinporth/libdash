@@ -198,8 +198,8 @@
     <IntDir>$(SolutionDir)intermediate\$(ProjectName)\$(Configuration)$(Platform)\</IntDir>
     <TargetName>$(ProjectName)d</TargetName>
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(ProjectDir)include;$(ProjectDir)..\zlib\include;$(ProjectDir)..\iconv\include;$(ProjectDir)..\libxml2\include;$(ProjectDir)..\libcurl\include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(ProjectDir)..\iconv\lib;$(ProjectDir)..\zlib\lib;$(ProjectDir)..\libcurl\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir)include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)..\iconv\lib;$(ProjectDir)..\libcurl\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -210,8 +210,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <IntDir>$(SolutionDir)intermediate\$(ProjectName)\$(Configuration)$(Platform)\</IntDir>
-    <IncludePath>$(ProjectDir)include;$(ProjectDir)..\zlib\include;$(ProjectDir)..\iconv\include;$(ProjectDir)..\libxml2\include;$(ProjectDir)..\libcurl\include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(ProjectDir)..\iconv\lib;$(ProjectDir)..\zlib\lib;$(ProjectDir)..\libcurl\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir)include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)..\iconv\lib;$(ProjectDir)..\libcurl\lib;$(LibraryPath)</LibraryPath>
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
